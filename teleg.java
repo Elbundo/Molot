@@ -67,7 +67,7 @@ public class teleg
 		String document = "";
 		String line = "";
 		try{
-			//System.out.println(http.getResponseCode() + " " + http.getResponseMessage());
+			System.out.println(http.getResponseCode() + " " + http.getResponseMessage());
 			BufferedReader in = new BufferedReader(new InputStreamReader(http.getInputStream()));
 			while(true){
 	            try{
