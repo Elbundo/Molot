@@ -30,9 +30,11 @@ public class TelegramBot implements Runnable
 		}
 		catch(Exception e)
 		{
+			teleg myT = new teleg("ALl is bad!");
 			return;
 		}
 		teleg myT = new teleg(token);
+		System.out.println(token);
 		while(isActive){
 			Message curMsg = getCommand(myT.getUpdates());
 			if(!lastMsg.equals(curMsg)){
