@@ -36,6 +36,7 @@ public class TelegramBot implements Runnable
 		teleg myT = new teleg(token);
 		System.out.println(token);
 		while(isActive){
+			System.out.println("check...");
 			Message curMsg = getCommand(myT.getUpdates());
 			if(!lastMsg.equals(curMsg)){
 				//curMsg.show();
